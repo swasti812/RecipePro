@@ -20,6 +20,7 @@ class _TabScreenState extends State<TabScreen> {
     return Scaffold(
         appBar: AppBar(title: Text(_pages[_selectedPageIndex]['title']),
         ),
+        drawer:Drawer(child: Text('The Drawer'),),
         body:_pages[_selectedPageIndex]['page'],
     bottomNavigationBar:BottomNavigationBar(onTap: _selectpage,
       unselectedItemColor: Colors.black,
